@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/grid.css">
+    <link rel="stylesheet" href="./assets/styles/coderhouse.css">
+    <script src="https://kit.fontawesome.com/2c24c8ae43.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="assets/data/data.js"></script>
+    <script src="assets/scripts/products.js"></script>
+    <script src="assets/scripts/shoppingCart.js"></script>
+    <script defer src="assets/scripts/app.js"></script>
+    
+    <title>Coderhouse</title>
+</head>
+<body>
+    <header>
+        
+    <div class="grid">
+        <div class="col-1">
+            <img alt="game-zone" src="assets/images/game-zone-logo.png">
+        </div>
+        <div class="col-1 menu">
+            <ul class="menu-container">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Tienda</a></li>
+                <li><a href="index.html">Promociones</a></li>
+                <li><a href="index.html">Contacto</a></li>
+            </ul>
+        </div>
+            
+        
+    </div>
+    </header>
+
+    <section class="search-box">
+        <form>
+            <div class="grid">
+                <div class="col-9-12">
+                    <input id="search-box-input" type="text" value=""/>
+                </div>
+                <div class="col-2-12">
+                    <input type="button" value="Buscar" class="btn -primary -block" id="search-button"/>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="search-results">
+        <div class="grid">
+            <div class="col-10-12 parrafo-busqueda"><p><strong><span id="search-result-length"></span></strong> resultados para la busqueda <strong><span id="search-key"></span></strong></p></div>
+        </div>
+        <div class="grid">
+            <div class="col-10-12" >
+                <div class="col-4-12" id="products-container"></div>   
+            </div>       
+            <div class="col-6-12">
+                <div class="cart-items" id="cart-container"></div>
+                <div class="total-container"></div>
+                <input type="button" class="btn -secondary clear-cart" value="Cancelar">
+                <input type="button" class="btn -primary buy-btn" value="Comprar">
+            </div>  
+        </div>
+    </section>
+
+    <section>
+        <!-- The Modal -->
+        <div class="modal" id="modal-container"></div>
+    </section>
+
+    <footer>
+        <div class="grid">
+            <div class="col-6-12">
+                El Salvador 5218, Piso 3 Oficina 308, Palermo Soho, CP 1414, Buenos Aires, Argentina<br>
+                © 2020 Game Zone, todos los derechos reservados.
+            </div>
+        </div>        
+    </footer>
+    
+</body>
+</html>

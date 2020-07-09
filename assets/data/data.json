@@ -1,0 +1,97 @@
+[
+    {
+        "id": "1",
+        "titulo": "Sony Playstation 4 Slim 1tb Fifa 20 Bundle Jet Black",
+        "precio": 54000,
+        "descripcion": "descripcion del producto",
+        "imagen": "http://mla-s2-p.mlstatic.com/922826-MLA40300197733_012020-I.jpg"
+    },
+
+    {
+        "id": "2",
+        "titulo": "Nintendo Switch Bundle version 1",
+        "precio": 52000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/nintendo-switch-1.jpg"
+    },
+
+    {
+        "id": "3",
+        "titulo": "Xbox One Bundle version 1",
+        "precio": 53000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/xbox-one-1.jpg"
+    },
+
+    {
+        "id": "4",
+        "titulo": "Sony Playstation 4 500Gb Nba 16 Bundle Jet Black",
+        "precio": 44000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/playstation-nba.jpg"
+    },
+
+    {
+        "id": "5",
+        "titulo": "Nintendo Switch Bundle version 2",
+        "precio": 50000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/nintendo-switch-2.jpg"
+    },
+
+    {
+        "id": "6",
+        "titulo": "Xbox One Bundle version 2",
+        "precio": 49000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/xbox-one-2.jpg"
+    },
+
+    {
+        "id": "7",
+        "titulo": "Sony Playstation 4 Slim 1tb Nfl Mlb 15 Bundle Jet Black",
+        "precio": 50000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/sony-playstation-4-madden-nfl-mlb.jpg"
+    },
+
+    {
+        "id": "8",
+        "titulo": "Nintendo Switch Bundle version 3",
+        "precio": 48000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/nintendo-switch-3.jpg"
+    }, 
+
+    {
+        "id": "9",
+        "titulo": "Xbox One Bundle version 3",
+        "precio": 51000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/xbox-one-3.jpg"
+    },
+
+    {
+        "id": "10",
+        "titulo": "Sony Playstation 4 Pro 1tb Uncharted 19 Bundle Jet Black",
+        "precio": 49000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/uncharted.jpg"
+    },
+
+    {
+        "id": "11",
+        "titulo": "Sony Playstation 4 Pro 1tb Jet Black 2 controllers",
+        "precio": 49000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/playstation-dual.jpg"
+    },
+
+    {
+        "id": "12",
+        "titulo": "Sony Playstation 4 Slim 1tb Jet White",
+        "precio": 47000,
+        "descripcion": "descripcion del producto",
+        "imagen": "./assets/images/playstation-white.jpg"
+    }
+]
