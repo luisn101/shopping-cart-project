@@ -3,7 +3,7 @@
         "id": "1",
         "titulo": "Sony Playstation 4 Slim 1tb Fifa 20 Bundle Jet Black",
         "precio": 54000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Sony Playstation 4 Slim 1tb Fifa 20 Bundle Jet Black</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "imagen": "http://mla-s2-p.mlstatic.com/922826-MLA40300197733_012020-I.jpg"
     },
 
@@ -11,7 +11,7 @@
         "id": "2",
         "titulo": "Nintendo Switch Bundle version 1",
         "precio": 52000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Nintendo Switch Bundle version 1</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "imagen": "./assets/images/nintendo-switch-1.jpg"
     },
 
@@ -19,7 +19,7 @@
         "id": "3",
         "titulo": "Xbox One Bundle version 1",
         "precio": 53000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Xbox One Bundle version 1</strong>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
         "imagen": "./assets/images/xbox-one-1.jpg"
     },
 
@@ -27,7 +27,7 @@
         "id": "4",
         "titulo": "Sony Playstation 4 500Gb Nba 16 Bundle Jet Black",
         "precio": 44000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Sony Playstation 4 500Gb Nba 16 Bundle Jet Black</strong>. Tempor orci dapibus ultrices in iaculis nunc sed augue lacus. Volutpat maecenas volutpat blandit aliquam. Sit amet nulla facilisi morbi tempus.",
         "imagen": "./assets/images/playstation-nba.jpg"
     },
 
@@ -35,7 +35,7 @@
         "id": "5",
         "titulo": "Nintendo Switch Bundle version 2",
         "precio": 50000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Nintendo Switch Bundle version 2</strong>. Sociis natoque penatibus et magnis dis parturient montes. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Facilisis volutpat est velit egestas dui id ornare.",
         "imagen": "./assets/images/nintendo-switch-2.jpg"
     },
 
@@ -43,7 +43,7 @@
         "id": "6",
         "titulo": "Xbox One Bundle version 2",
         "precio": 49000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Xbox One Bundle version 2</strong>. Ornare suspendisse sed nisi lacus. Mattis vulputate enim nulla aliquet porttitor lacus luctus. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.",
         "imagen": "./assets/images/xbox-one-2.jpg"
     },
 
@@ -51,7 +51,7 @@
         "id": "7",
         "titulo": "Sony Playstation 4 Slim 1tb Nfl Mlb 15 Bundle Jet Black",
         "precio": 50000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Sony Playstation 4 Slim 1tb Nfl Mlb 15 Bundle Jet Black</strong>. Aliquet risus feugiat in ante metus dictum at tempor commodo. Nunc sed augue lacus viverra vitae congue eu. Eu scelerisque felis imperdiet proin fermentum leo vel. A iaculis at erat pellentesque adipiscing.",
         "imagen": "./assets/images/sony-playstation-4-madden-nfl-mlb.jpg"
     },
 
@@ -59,7 +59,7 @@
         "id": "8",
         "titulo": "Nintendo Switch Bundle version 3",
         "precio": 48000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Nintendo Switch Bundle version 3</strong>. Arcu risus quis varius quam quisque id diam. Fames ac turpis egestas integer eget aliquet. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Sem viverra aliquet eget sit amet.",
         "imagen": "./assets/images/nintendo-switch-3.jpg"
     }, 
 
@@ -67,7 +67,7 @@
         "id": "9",
         "titulo": "Xbox One Bundle version 3",
         "precio": 51000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Xbox One Bundle version 3</strong>. Nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Aliquam etiam erat velit scelerisque in dictum. Quis auctor elit sed vulputate mi sit amet mauris commodo. Consequat ac felis donec et odio pellentesque.",
         "imagen": "./assets/images/xbox-one-3.jpg"
     },
 
@@ -75,7 +75,7 @@
         "id": "10",
         "titulo": "Sony Playstation 4 Pro 1tb Uncharted 19 Bundle Jet Black",
         "precio": 49000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Sony Playstation 4 Pro 1tb Uncharted 19 Bundle Jet Black</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "imagen": "./assets/images/uncharted.jpg"
     },
 
@@ -83,7 +83,7 @@
         "id": "11",
         "titulo": "Sony Playstation 4 Pro 1tb Jet Black 2 controllers",
         "precio": 49000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Sony Playstation 4 Pro 1tb Jet Black 2 controllers</strong>. Quis eleifend quam adipiscing vitae proin sagittis nisl. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Mauris ultrices eros in cursus turpis massa tincidunt dui. Viverra orci sagittis eu volutpat odio facilisis mauris sit. ",
         "imagen": "./assets/images/playstation-dual.jpg"
     },
 
@@ -91,7 +91,7 @@
         "id": "12",
         "titulo": "Sony Playstation 4 Slim 1tb Jet White",
         "precio": 47000,
-        "descripcion": "descripcion del producto",
+        "descripcion": "<strong>Sony Playstation 4 Slim 1tb Jet White</strong>. Nulla malesuada pellentesque elit eget gravida cum sociis. Erat pellentesque adipiscing commodo elit. Eget sit amet tellus cras. Sociis natoque penatibus et magnis dis parturient montes. Eu sem integer vitae justo eget magna.",
         "imagen": "./assets/images/playstation-white.jpg"
     }
 ]

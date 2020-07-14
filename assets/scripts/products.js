@@ -26,11 +26,28 @@ function Products() {
                         <h2>${product.titulo}</h2>
                         <p>$${product.precio}</p>
                         <div>
-                            <input type="button" class="btn -primary open-modal" id="detail-btn" data-id=${product.id} value="Ver detalle">
+                            <input type="button" class="btn -primary open-modal detail-btn" data-id=${product.id} value="Ver detalle">
                             <input type="button" class="btn -secondary bag-btn" data-id=${product.id} value="Agregar al carrito">
                         </div>
                     </div>
                 </article>
+                `
+    }
+
+    this.buildHtmlProductDetail = function(product) {
+        return `
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>${product.titulo}</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            ${product.descripcion}
+                        </p>
+                    </div>
+                </div>
                 `
     }
 
@@ -46,14 +63,11 @@ function Products() {
         container.innerHTML = html;
     }
 
-    this.search = function(key) {
-        this.results = [];
-        this.data.forEach((product) => {
-            if(product.titulo.toLowerCase().includes(key.toLowerCase())){
-                this.results.push(product);
-            }
-        });
-        return this.results;
+    this.buildProductDetail = function(containerId, sourceData) {
+        let container = document.getElementById(containerId);
+        container.innerHTML = "";
+        let html = this.buildHtmlProductDetail(sourceData);
+        container.innerHTML = html;
     }
 
 }

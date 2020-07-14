@@ -2,7 +2,7 @@
 let searchBoxInput;
 let searchKey;
 let checkboxInput;
-let searchBoxSelect
+let searchBoxSelect;
 let searchResultLength;
 let products;
 let removeCartItemButtons;
@@ -11,6 +11,9 @@ let clearCartBtn;
 let buyCartBtn;
 let cartItemContainer;
 let searchBar;
+let productDetailButtons;
+let modal;
+let closeSpan;
 let cartRows;
 let addToCartButtons;
 let cartContent;
@@ -19,20 +22,6 @@ let cartProducts;
 
 // buttons from the DOM
 let addToCartBtnDOM = [];
-
-function getSearchBoxValue() {
-    let searchBoxInputValue = searchBoxInput.value;
-    let searchResult = [0,1,2];
-    if(searchBoxInputValue.trim() !== '') {
-        setSearchKeyRender(searchBoxInputValue, searchResult.length);
-    }
-}
-
-function setSearchKeyRender(key, resultLength) {
-    searchResultLength.innerHTML = resultLength; 
-    searchKey.innerHTML = key;    
-}
-
 
 function saveProducts(products) {
     localStorage.setItem('products', JSON.stringify(products));
@@ -77,13 +66,13 @@ function addToCart() {
         let id = button.dataset.id;
         let inCart = shoppingCart.cart.find(product => product.id === id);
         if(inCart) {
-        button.value = "En el carrito";
-        button.disabled = true;
-        } else {
+            button.value = "En el carrito";
+            button.disabled = true;
+        }
+
         $(button).click(function(event) {
             event.target.value = "En el carrito";
             event.target.disabled = true;
-            console.log(event.target);
             //get product from products adding an amount property 
             let cartProduct = {...getProduct(id), amount:1};
             //add product to the cart
@@ -94,8 +83,30 @@ function addToCart() {
             setCartValues(shoppingCart.cart);
             //display cart product
             shoppingCart.buildCart('cart-container');
-            });
-        }   
+        });      
+    });
+}
+
+function renderProductDetail() {
+    productDetailButtons = [...$(".detail-btn")];
+    closeSpan = $(".close");
+    modal = $("#modal-container");
+    productDetailButtons.forEach(button => {
+        $(button).click(function(event) {
+            let id = button.dataset.id;
+            products.buildProductDetail("modal-container", getProduct(id));
+            $(modal).css("display", "block");
+        });
+    });
+
+    $(closeSpan).click(function() {
+        $(modal).css("display", "none");
+    });
+
+    $(window).click(function(event) {
+        if(event.target === $(modal)[0]) {
+            $(modal).css("display", "none");
+        }
     });
 }
 
@@ -136,6 +147,7 @@ $(document).ready(() => {
     $.ajax({
         method: "GET",
         url: "http://127.0.0.1:5500/assets/data/data.json"
+        
     }).done(function (data) {
         products = new Products();
         products.init(data);
@@ -147,29 +159,11 @@ $(document).ready(() => {
 
         saveProducts(products.data);
         addToCart();
+        renderProductDetail();
         
     }).fail(function (error) {
         console.log(error);
     });
-    
-
-
-    searchKey = $("#search-key");
-    searchBoxSelect = $("#search-box-select");
-    searchResultLength = $("#search-result-length");
-    searchButton = $("#search-button");
-    searchButton.disabled = true;
-    searchButton.click(function() {
-        console.log("searchButton click");
-    })
-    searchBoxInput = document.getElementById("search-box-input");
-    searchBoxInput.addEventListener("input", function(event) {
-        if(event.target.value.length > 3) {
-            searchButton.disabled = false;
-        } else {
-            searchButton.disabled = true;
-        }
-    })
 
     cartContent = $('#cart-container')[0];
     clearCartBtn = $(".clear-cart");
