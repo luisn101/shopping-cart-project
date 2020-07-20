@@ -1,9 +1,5 @@
 //variables
 let searchBoxInput;
-let searchKey;
-let checkboxInput;
-let searchBoxSelect;
-let searchResultLength;
 let products;
 let removeCartItemButtons;
 let searchButton;
@@ -23,6 +19,15 @@ let cartProducts;
 // buttons from the DOM
 let addToCartBtnDOM = [];
 
+
+$("#search-box-input").on("keyup", function() {
+    let value = $(this).val().toLowerCase();
+    $("#products-container .search-item").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+    });
+});
+
+
 function saveProducts(products) {
     localStorage.setItem('products', JSON.stringify(products));
 }
@@ -38,12 +43,6 @@ function saveCart(cart) {
 
 function getCart() {
     return localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
-}
-
-function setup() {
-    shoppingCart.cart = getCart();
-    setCartValues(shoppingCart.cart);
-    shoppingCart.populate();
 }
 
 function removeProduct(id) {
@@ -125,7 +124,7 @@ function setCartValues(cart) {
     cartProducts.innerText = productsTotal;
 }
 
-function showCartTotal(){
+function displayCartTotal(){
     let tempTotal = 0;
     shoppingCart.cart.map(product => {
         tempTotal += product.precio * product.amount;
@@ -134,7 +133,7 @@ function showCartTotal(){
     return tempTotal; 
 }
 
-function showCartAmount(){
+function displayCartAmount(){
     let productsTotal = 0;
     shoppingCart.cart.map(product => {
         productsTotal += product.amount;
@@ -179,7 +178,7 @@ $(document).ready(() => {
     cartContent = $('#cart-container')[0];
     buyCartBtn = $(".buy-btn");
     $(buyCartBtn).click(function() {
-        if(showCartAmount() === 0) {
+        if(displayCartAmount() === 0) {
             alert("Por favor, seleccione un producto");
         }
         else {

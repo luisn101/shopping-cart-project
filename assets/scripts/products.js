@@ -2,7 +2,6 @@
 function Products() {
 
     this.data = [];
-    this.results = [];
 
     this.init = function(data) {
         this.data = data;
@@ -46,10 +45,15 @@ function Products() {
                         <p>
                             ${product.descripcion}
                         </p>
+                        <br>
+                        <p>
+                        <strong>Precio:</strong> $${product.precio}
+                        </p>
                     </div>
                 </div>
                 `
     }
+
 
     this.buildList = function(containerId, sourceData) {
         let container = document.getElementById(containerId);

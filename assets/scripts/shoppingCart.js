@@ -37,14 +37,13 @@ function ShoppingCart() {
         });
         
         return html;
-        console.log(html);
     }
 
     this.buildCart = function(containerId) {
         let container = document.getElementById(containerId);
         container.innerHTML = "";
         let html = `
-            <h2>Carrito de compras <span class="cart-products">(${showCartAmount()})</span></h2>
+            <h2>Carrito de compras <span class="cart-products">(${displayCartAmount()})</span></h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">Producto</span>
                 <span class="cart-price cart-header cart-column">Precio</span>
@@ -55,13 +54,10 @@ function ShoppingCart() {
             </div>
             <div class="total-container">
                 <strong>Total:</strong> 
-                <span class="cart-total">$${showCartTotal()}</span>
+                <span class="cart-total">$${displayCartTotal()}</span>
             </div>
                 
         `
-
         container.innerHTML = html;
-    }
-
-    
+    } 
 }

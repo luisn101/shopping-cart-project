@@ -61,19 +61,35 @@ header ul a:hover {
     transition: all 0.3s linear;
 }
 
+.search-results {
+    margin-top: 70px;
+}
+
+.searchWrapper {
+    position: relative;
+}
+
+.searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 32%;
+    right: 33%;
+}
+
 .search-box {
     margin: 36px 0;
 }
 
 .search-box input[type=text] {
-    width: 100%;
+    width: 70%;
     padding: 1em;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #444444;
 }
 
-#search-button:disabled {
-    opacity: 0.5;
+.search-icon {
+    left: 56%;
+    top: 34%;
 }
 
 .parrafo-busqueda {

@@ -9,7 +9,6 @@
     <script src="https://kit.fontawesome.com/2c24c8ae43.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
-    <script src="assets/data/data.js"></script>
     <script src="assets/scripts/products.js"></script>
     <script src="assets/scripts/shoppingCart.js"></script>
     <script defer src="assets/scripts/app.js"></script>
@@ -39,20 +38,14 @@
     <section class="search-box">
         <form>
             <div class="grid">
-                <div class="col-9-12">
-                    <input id="search-box-input" type="text" value=""/>
-                </div>
-                <div class="col-2-12">
-                    <input type="button" value="Buscar" class="btn -primary -block" id="search-button"/>
+                <div class="col-9-12 searchWrapper">
+                    <input id="search-box-input" type="text" value="" placeholder="Buscar producto"/>
                 </div>
             </div>
         </form>
     </section>
 
     <section class="search-results">
-        <div class="grid">
-            <div class="col-10-12 parrafo-busqueda"><p><strong><span id="search-result-length"></span></strong> resultados para la busqueda <strong><span id="search-key"></span></strong></p></div>
-        </div>
         <div class="grid">
             <div class="col-10-12" >
                 <div class="col-4-12" id="products-container"></div>   
