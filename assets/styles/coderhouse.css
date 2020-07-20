@@ -85,6 +85,8 @@ header ul a:hover {
     padding: 1em;
     font-size: 1.2em;
     color: #444444;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
 .search-icon {
@@ -98,9 +100,10 @@ header ul a:hover {
 
 article.search-item {
     display: inline-block;
+    box-shadow: 0px 10px 20px rgba(128, 124, 124, 0.4);
     padding-bottom: 3em;
     margin-bottom: 3em;
-    border-bottom: 1px solid #444444;
+    border-radius: 4px;
 }
 
 article.search-item h2 {
